@@ -169,18 +169,19 @@ nav{
     flex-basis: 25%;
     text-align: center;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 2px 3px 5px gray;
 }
 
 .services-box img{
-    width: 60%;
+    width: 100%;
 }
 
 .services-box:hover{
-    background-color: #e74c3c;
+    /* background-color: rgb(76, 76, 198); */
     color: white;
     transition: 0.4s;
+   background-color: rgb(62, 58, 58);
 }
 
 #contact{
@@ -235,4 +236,39 @@ nav{
 
 #rohit{
     color: white;
+}
+
+
+.Link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.Link>a{
+    width:40px ;
+}
+
+.contact-right-col>div>img{
+    width: 40px;
+}
+
+.contact-right-col>img{
+    width: 40px;
+}
+
+.contactMe{
+   display: flex;
+   margin-bottom: 10px;
+  
+}
+
+.contactMe>div{
+    font-size: 30px;
+   color: white;
+}
+
+.contectWith{
+    margin-bottom: 10px;
+    font-size: 30px;
 }
