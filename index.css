@@ -144,14 +144,19 @@ nav{
 .skills-row{
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(auto,200px);
-    gap: 60px;
+    gap: 40px;
 }
 
-.skills-row>img{
-    height: 200px;
-    width: 400px;
+.skills-row>div>img{
+    height: 130px;
+    width: 200px;
+}
+
+.skills-row>div>p{
+    color: white;
+    text-align: center;
 }
 
 #services{
