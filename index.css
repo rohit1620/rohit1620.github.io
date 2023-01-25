@@ -115,7 +115,7 @@ nav{
     width: 100%;
     padding: 50px;
     height: 450px;
-    border-radius: 90%;
+    border-radius: 50%;
 }
 
 .about-right-col{
@@ -154,6 +154,13 @@ nav{
     width: 200px;
 }
 
+.skills-row>div:hover{
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+   background-color:blue;
+ color: black;
+ transition: 0.3s;
+ cursor: pointer;
+}
 .skills-row>div>p{
     color: white;
     text-align: center;
@@ -184,9 +191,13 @@ nav{
 
 .services-box:hover{
     /* background-color: rgb(76, 76, 198); */
-    color: white;
+    /* color: white; */
     transition: 0.4s;
-   background-color: rgb(62, 58, 58);
+   /* background-color:lightblue; */
+   box-shadow: rgb(38, 57, 77) 0px 30px 30px -10px;
+   padding-bottom: 20px;
+  margin-bottom: 50px;
+   cursor: pointer;
 }
 
 #contact{
@@ -277,3 +288,94 @@ nav{
     margin-bottom: 10px;
     font-size: 30px;
 }
+
+/* responsiveness from here  */
+
+@media only screen and (max-width: 700px) {
+    header{
+        width: 100%;
+        /* height: 100vh; */
+        height: 400px;
+        background:url('./images/bg1.jpeg') ;
+        background-size:  100% , cover;
+        background-position: right,center;
+        background-repeat: no-repeat,no-repeat;
+        clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    }
+
+    .about-row{
+        display: inline;
+        /* justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; */
+       
+    }
+    #about{
+        padding: 20px 25px;
+     }
+
+     .about-left-col{
+        flex-basis: 100%;
+      margin-top: -40px;
+    }
+    
+    .about-left-col img{
+        width: 100%;
+        padding: 50px;
+        height: 450px;
+        border-radius: 50%;
+    }
+    
+    .about-right-col{
+        flex-basis: 50%;
+        font-size: 20px;
+        text-align: justify;
+
+    }
+    .skills-row{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto,200px);
+        gap: 40px;
+    }
+    .services-row{
+        display: inline;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    
+    .services-box{
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        box-shadow: 2px 3px 5px gray;
+        /* margin-bottom: 30px; */
+        gap: 30px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 475px) {
+    header{
+        width: 100%;
+        /* height: 100vh; */
+        height: 400px;
+        background:url('./images/bg1.jpeg') ;
+        background-size:  100% , cover;
+        background-position: right,center;
+        background-repeat: no-repeat,no-repeat;
+        clip-path: none;
+    }
+    .skills-row{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(auto,200px);
+        gap: 40px;
+    }
+    
+  }
