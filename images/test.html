@@ -18,7 +18,7 @@
             border: 1px solid black;
             justify-content: space-between;
             align-items: center;
-            background-color: blue;
+            background-color: black;
             padding: 0px 30px;
         }
         .header .logo{
@@ -73,7 +73,7 @@
            align-items: center;
            transform: translateX(100%);
           transition: all 0.5s linear;
-
+          /* z-index: 999; */
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
@@ -123,9 +123,7 @@
        let x= document.querySelector(".header").classList.toggle("active");
        if(x){
         document.querySelector("body").style.overflowX="visible"
-        setTimeout(()=>{
- document.querySelector("body").style.overflowX="hidden"
-        },6000)
+        
        }else{
          document.querySelector("body").style.overflowX="hidden"
        }
