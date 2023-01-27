@@ -36,5 +36,9 @@ document.querySelector(".abouts1").addEventListener("click",myPen)
 document.querySelector(".servicess1").addEventListener("click",myPen)
 document.querySelector(".contactss1").addEventListener("click",myPen)
 // document.querySelector(".homes1").addEventListener("click",myPens)
-document.querySelector(".classBtn").addEventListener("click",myPen)
+// document.querySelector(".classBtn").addEventListener("click",myPen)
+
+
+// document.querySelector(".btn1").addEventListener("click",myResume)
+
 
