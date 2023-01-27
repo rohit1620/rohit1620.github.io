@@ -4,13 +4,15 @@ function myFun(){
 }
 let myPen=()=>{
     const x=document.querySelector(".menu").classList.toggle("active")
-    const y=document.querySelector(".mobile-navbar-btn").style.display;
+    const y=document.querySelector(".mobile-nav-icon").style.display;
     // alert("rohit")
-    if(x && y=="block"){
+    if(x){
         document.querySelector(".head").classList.remove("header")
+     
     }else{
         document.querySelector(".head").classList.add("header")
     }
+   
     
     
     console.log("rhau");
@@ -35,3 +37,4 @@ document.querySelector(".servicess1").addEventListener("click",myPen)
 document.querySelector(".contactss1").addEventListener("click",myPen)
 // document.querySelector(".homes1").addEventListener("click",myPens)
 document.querySelector(".classBtn").addEventListener("click",myPen)
+
