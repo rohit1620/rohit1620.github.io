@@ -2,6 +2,10 @@ document.getElementById("linkdin").addEventListener("click",myFun);
 function myFun(){
     location.href="https://www.linkedin.com/in/rohit-kumar-malav-205a30229/"
 }
+document.getElementById("github").addEventListener("click",myGithub);
+function myGithub(){
+    location.href="https://github.com/rohit1620"
+}
 let myPen=()=>{
     const x=document.querySelector(".menu").classList.toggle("active")
     const y=document.querySelector(".mobile-nav-icon").style.display;

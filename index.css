@@ -140,9 +140,9 @@ nav{
 }
 
 .about-left-col img{
-    width: 100%;
+    width: 90%;
     padding: 50px;
-    height: 450px;
+    height: 500px;
     border-radius: 50%;
 }
 
@@ -206,7 +206,7 @@ nav{
 }
 
 .services-box{
-    flex-basis: 25%;
+    flex-basis: 22%;
     text-align: center;
     margin-top: 20px;
     padding: 10px;
@@ -246,6 +246,7 @@ nav{
 
 .contact-right-col{
     flex-basis: 50%;
+    margin-top: 10px;
 }
 
 .contact-right-col form{
@@ -316,7 +317,6 @@ nav{
     margin-bottom: 10px;
     font-size: 30px;
 }
-
 /* responsiveness from here  */
 @media only screen and (max-width: 980px) and (min-width: 476px){
     .mobile-nav-icon{
