@@ -21,7 +21,8 @@
            <a href="#skills"  class="skillss">Skills</a>
            <a href="#services"  class="servicess">Projects</a>
            <a href="#contact"  class="contactss">Contact</a>
-           <a href="https://drive.google.com/u/0/uc?id=1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL&export=download" download >Resume </a>
+           <button onclick="myResume()" style="border:none;background-color: black;
+           color:white;font-size: 20px;font-weight: bold; padding-left: 20px;" >Resume </button>
          </div>
          <div class="mobile-navbar-btn" >
             <ion-icon name="menu-outline"  class="mobile-nav-icon" ></ion-icon>
@@ -256,25 +257,19 @@
 <script src="./index.js"></script>
 
 <script>
-   let p=false;
+   // let p=false;
    let myResume=()=>{
-      p=true; 
-         location.href="https://drive.google.com/file/d/1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL/view?usp=share_link";
+      // p=true; 
+         // location.href="https://drive.google.com/file/d/1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL/view?usp=share_link";
+        
+       window.open("https://drive.google.com/file/d/1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL/view?usp=share_link")
+       location.href="https://drive.google.com/u/0/uc?id=1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL&export=download"
        
+    
 }
 
-if(p){
-   // setTimeout(()=>{
-    
-      location.href="https://drive.google.com/u/0/uc?id=1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL&export=download"
-   // },1000)
-}
-let download=()=>{
-    
-   //  location.href="https://drive.google.com/file/d/1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL/view?usp=share_link";
-   //  location.href="https://drive.google.com/u/0/uc?id=1aLZ1riT8lSmUSvxBUd5SknrEDk7f8uAL&export=download"
-    console.log("rohit");
-}
+
+
 </script>
 
 <!-- Include the library. -->
