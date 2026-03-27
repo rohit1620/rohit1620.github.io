@@ -19,6 +19,10 @@
 .img2{
     display: none;
 }
+.opacity{
+  opacity: 0;
+  filter: blur(5px);
+}
 
 .alredy{
     margin-top: -20px;
